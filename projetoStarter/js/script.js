@@ -29,15 +29,26 @@ let i = 0
 
 function ToRight(){
     i++
+    if(i==4){
+        i=0
+        ToRight(i)
+    }
     document.getElementById("author").innerHTML = reviews[i].name
     document.getElementById("job").innerHTML = reviews[i].job
     document.getElementById("text").innerHTML = reviews[i].text
+    document.getElementById("img").setAttribute("src", reviews[i].image)
 }
 
 function ToLeft(){
     i--
+    if(i==4){
+        i=0
+        ToLeft(i)
+    }
     document.getElementById("author").innerHTML = reviews[i].name
     document.getElementById("job").innerHTML = reviews[i].job
     document.getElementById("text").innerHTML = reviews[i].text
+    document.getElementById("img").setAttribute("src", reviews[i].image)
 }
+
 
