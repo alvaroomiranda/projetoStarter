@@ -38,6 +38,6 @@ function ToLeft(){
     i--
     document.getElementById("author").innerHTML = reviews[i].name
     document.getElementById("job").innerHTML = reviews[i].job
+    document.getElementById("text").innerHTML = reviews[i].text
 }
 
-// image.SetAAtribute("src",reviews[index].image);
